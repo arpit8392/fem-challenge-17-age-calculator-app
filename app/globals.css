@@ -2,26 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.input-field {
+	@apply block w-2/3 rounded-lg border px-4 py-3 text-xl font-bold tracking-wide caret-purple placeholder:uppercase placeholder:opacity-50 focus:border-none focus:outline-none focus:ring-1 md:min-w-fit md:px-6 md:text-3xl;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.input-label {
+	@apply block text-xs font-bold uppercase tracking-widest md:text-sm;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.error {
+	@apply pt-1 text-sm font-normal italic text-lightRed;
 }
