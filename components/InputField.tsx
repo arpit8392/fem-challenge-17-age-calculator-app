@@ -29,6 +29,7 @@ const InputField = ({
 			<input
 				type={type}
 				id={name}
+				autoComplete='off'
 				{...register(name)}
 				className={`input-field ${
 					error

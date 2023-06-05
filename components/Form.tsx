@@ -49,9 +49,17 @@ const Form = ({ handler }: Props) => {
 					error={errors.year}
 					placeholder='YYYY'
 				/>
+				{Object.values(errors)[0]?.type === 'valid-date' && (
+					<p className='error'>{Object.values(errors)[0]?.message}</p>
+				)}
 			</div>
 
-			<Button />
+			<div className='relative flex items-center py-4 md:py-8'>
+				<hr className='w-full' />
+				<div className='absolute right-1/2 md:right-0'>
+					<Button />
+				</div>
+			</div>
 		</form>
 	)
 }

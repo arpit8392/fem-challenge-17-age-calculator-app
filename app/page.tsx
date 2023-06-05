@@ -12,11 +12,10 @@ export default function Home() {
 	const submitHandler = (data: FormData) => {
 		const { day, month, year } = data
 		const result = calculateAge(day, month, year)
-		console.log(result)
 
-		if (!result) return
-
-		setAge(result)
+		if (result) {
+			setAge(result)
+		}
 	}
 
 	return (
