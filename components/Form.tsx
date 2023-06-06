@@ -24,7 +24,7 @@ const Form = ({ handler }: Props) => {
 			onSubmit={handleSubmit(handler)}
 			noValidate
 			className='flex max-w-full flex-col gap-8'>
-			<div className='grid grid-cols-3 gap-x-4 md:max-w-lg md:gap-x-8'>
+			<div className='grid grid-cols-3 gap-x-2 max-w-sm md:max-w-lg md:gap-x-8'>
 				<InputField
 					name='day'
 					label='Day'

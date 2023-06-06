@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .input-field {
-	@apply block w-2/3 rounded-lg border px-4 py-3 text-xl font-bold tracking-wide caret-purple placeholder:uppercase placeholder:opacity-50 focus:border-none focus:outline-none focus:ring-1 md:min-w-fit md:px-6 md:text-3xl;
+	@apply block w-2/3 min-w-fit rounded-lg border px-4 py-3 text-xl font-bold tracking-wide caret-purple placeholder:uppercase placeholder:opacity-50 focus:border-none focus:outline-none focus:ring-1 md:px-6 md:text-3xl;
 }
 
 .input-label {
