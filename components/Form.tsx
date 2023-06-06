@@ -50,7 +50,9 @@ const Form = ({ handler }: Props) => {
 					placeholder='YYYY'
 				/>
 				{Object.values(errors)[0]?.type === 'valid-date' && (
-					<p className='error'>{Object.values(errors)[0]?.message}</p>
+					<p className='error' role='alert'>
+						{Object.values(errors)[0]?.message}
+					</p>
 				)}
 			</div>
 

@@ -29,6 +29,7 @@ const InputField = ({
 			<input
 				type={type}
 				id={name}
+				aria-invalid={error ? 'true' : 'false'}
 				autoComplete='off'
 				{...register(name)}
 				className={`input-field ${
@@ -38,7 +39,11 @@ const InputField = ({
 				}`}
 				placeholder={placeholder}
 			/>
-			{error && <p className='error'>{error.message}</p>}
+			{error && (
+				<p role='alert' className='error'>
+					{error.message}
+				</p>
+			)}
 		</div>
 	)
 }
