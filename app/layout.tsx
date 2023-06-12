@@ -20,7 +20,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='bg-offWhite'>
 			<body
-				className={`${poppins.className} min-h-screen max-w-3xl overflow-hidden px-4 py-20 md:mx-auto`}>
+				className={`${poppins.className} min-h-screen max-w-3xl px-4 py-20 md:mx-auto`}>
 				{children}
 			</body>
 		</html>
