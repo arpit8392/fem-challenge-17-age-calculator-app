@@ -30,7 +30,7 @@ const InputField = ({
 				type={type}
 				id={name}
 				aria-invalid={error ? 'true' : 'false'}
-				autoComplete='off'
+				autoComplete={`bday-${name}`}
 				{...register(name)}
 				className={`input-field ${
 					error

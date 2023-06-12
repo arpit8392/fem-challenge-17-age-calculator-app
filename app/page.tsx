@@ -19,11 +19,9 @@ export default function Home() {
 	}
 
 	return (
-		<main className='px-4 py-20 md:grid md:min-h-screen md:place-content-center'>
-			<section className='flex flex-col gap-8 rounded-3xl rounded-br-[100px] bg-white px-6 py-12 shadow-2xl md:w-[840px] md:rounded-br-[200px] md:p-14'>
-				<Form handler={submitHandler} />
-				<AgeData results={age} />
-			</section>
+		<main className='flex flex-col gap-8 rounded-3xl rounded-br-[100px] bg-white px-6 py-12 shadow-2xl md:rounded-br-[200px] md:p-14'>
+			<Form handler={submitHandler} />
+			<AgeData results={age} />
 		</main>
 	)
 }

@@ -23,8 +23,9 @@ const Form = ({ handler }: Props) => {
 		<form
 			onSubmit={handleSubmit(handler)}
 			noValidate
-			className='flex max-w-full flex-col gap-8'>
-			<div className='grid max-w-sm grid-cols-3 gap-x-2 md:max-w-lg md:gap-x-8'>
+			className='flex min-w-fit flex-col flex-wrap gap-8'>
+			<fieldset className='grid grid-cols-3 gap-2 md:max-w-lg md:gap-8'>
+				<legend className='sr-only'>Input Birth Date</legend>
 				<InputField
 					name='day'
 					label='Day'
@@ -54,11 +55,11 @@ const Form = ({ handler }: Props) => {
 						{Object.values(errors)[0]?.message}
 					</p>
 				)}
-			</div>
+			</fieldset>
 
-			<div className='relative flex items-center py-4 md:py-8'>
+			<div className='relative flex items-center justify-center py-2 md:justify-end '>
 				<hr className='w-full' />
-				<div className='absolute right-1/2 md:right-0'>
+				<div className='absolute md:relative md:left-auto md:top-auto md:translate-x-0 md:translate-y-0'>
 					<Button />
 				</div>
 			</div>

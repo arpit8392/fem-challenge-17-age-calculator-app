@@ -18,8 +18,11 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang='en'>
-			<body className={`${poppins.className} bg-offWhite`}>{children}</body>
+		<html lang='en' className='bg-offWhite'>
+			<body
+				className={`${poppins.className} max-w-3xl overflow-hidden px-4 py-20 md:mx-auto`}>
+				{children}
+			</body>
 		</html>
 	)
 }
