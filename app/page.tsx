@@ -11,10 +11,11 @@ export default function Home() {
 
 	const submitHandler = (data: FormData) => {
 		const { day, month, year } = data
-		const result = calculateAge(day, month, year)
-
-		if (result) {
-			setAge(result)
+		const results = calculateAge(day, month, year)
+		if (results) {
+			setAge(results)
+		} else {
+			setAge(null)
 		}
 	}
 

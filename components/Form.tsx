@@ -17,8 +17,6 @@ const Form = ({ handler }: Props) => {
 		formState: { errors },
 	} = useForm<FormData>({
 		resolver: yupResolver(validationSchema),
-		mode: 'all',
-		reValidateMode: 'onBlur' || 'onSubmit',
 	})
 
 	return (
